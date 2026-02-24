@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- font awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- css link -->
      <link rel="stylesheet" href="./style/job.css">
 
@@ -66,9 +69,9 @@
         <div class="flex gap-2">
             <button id="allFilterButton" class="text-white bg-blue-500 cursor-pointer rounded-sm px-8 py-2.5 font-semibold text-[12px] w-20 hover:bg-blue-600 hover:scale-95 duration-200 transition-all">All</button>
 
-            <button id="interviewFilterButton" class=" text-[#64748bFF] bg-white cursor-pointer border border-[#f1f2f4FF] rounded-sm py-2.5 px-[13px] text-xs font-medium hover:bg-black/50 hover:text-white hover:scale-95 duration-200 transition-all">Interview</button>
+            <button id="interviewFilterButton" class=" text-[#64748bFF] bg-white cursor-pointer border border-[#f1f2f4FF] rounded-sm py-2.5 px-[13px] text-xs font-medium hover:bg-blue-600 hover:text-white hover:scale-95 duration-200 transition-all">Interview</button>
 
-            <button id="rejectedFilterButton" class=" text-[#64748bFF] bg-white cursor-pointer border border-[#f1f2f4FF] rounded-sm py-2.5 px-3.5 text-xs font-medium hover:bg-black/50 hover:text-white hover:scale-95 duration-200 transition-all">Rejected</button>
+            <button id="rejectedFilterButton" class=" text-[#64748bFF] bg-white cursor-pointer border border-[#f1f2f4FF] rounded-sm py-2.5 px-3.5 text-xs font-medium hover:bg-blue-600 hover:text-white hover:scale-95 duration-200 transition-all">Rejected</button>
         </div>
     </section>
 
@@ -76,6 +79,53 @@
  
  
     <!-- main section -->
+
+    <main id="jobsContainer">
+
+        <!-- card 1 -->
+
+        <section class="space-y-4 job-card">
+
+            <div class="bg-white border border-black my-4 border-[f1f2f4] rounded-lg p-6 flex justify-between items-end md:items-start">
+                <div class="space-y-5">
+
+                    <div>
+                        <h3 class="text-[#002c5cFF] text-xl font-semibold mb-1">Mobile First Corp</h3>
+                        <p class="text-[#64748bFF] ">React Native Developer</p>   
+                    </div>
+
+                    <div class=""><i class="fa-regular fa-trash-can"></i></div>
+
+                    <p class="text-[#64748bFF] text-sm">Remote • Full-time • $130,000 - $175,000</p>
+
+                    <div class="space-y-2">
+                        <button class="bg-[#eef4ffFF] rounded text-font-[#002c5cFF] text-sm font-medium py-4 px-6 cursor-pointer hover:bg-blue-600 duration-400 hover:scale-95 hover:text-white transition-all">NOT APPLIED</button>
+                        
+                        <p class="text-[#323b49FF] text-sm">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button
+                            class="border-[#10b981FF] border py-2 px-3 text-[#10b981FF] font-semibold text-sm rounded cursor-pointer hover:bg-green-600 hover:text-white hover:scale-95 duration-200 transition-all">INTERVIEW</button>
+
+                        <button
+                            class="border-[#ef4444FF] border py-2 px-3 text-[#ef4444FF] font-semibold text-sm rounded cursor-pointer hover:bg-red-600 hover:text-white hover:scale-95 duration-200 transition-all">REJECTED</button>
+                    </div>
+
+                </div>
+
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
 
     
 </body>
